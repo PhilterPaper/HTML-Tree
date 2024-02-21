@@ -11,3 +11,4 @@ Makefile
 HTML-Tree-*.tar.gz
 HTML-Tree-*/
 lwp-test-*
+misspell.txt

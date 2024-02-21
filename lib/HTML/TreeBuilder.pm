@@ -912,7 +912,7 @@ sub warning {
     sub end {
         return if $_[0]{'_stunted'};
 
-       # Either: Acccept an end-tag signal from HTML::Parser
+       # Either: Accept an end-tag signal from HTML::Parser
        # Or: Method for closing currently open elements in some fairly complex
        #  way, as used by other methods in this class.
         my ( $self, $tag, @stop ) = @_;
@@ -2083,7 +2083,7 @@ TODO: document
 
 =method-int end
 
-Either: Acccept an end-tag signal from HTML::Parser
+Either: Accept an end-tag signal from HTML::Parser
 Or: Method for closing currently open elements in some fairly complex
 way, as used by other methods in this class.
 

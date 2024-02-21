@@ -1698,7 +1698,7 @@ characters are encoded as HTML entities.  See L<HTML::Entities> for
 details.  If passed an empty string, no entities are encoded.
 
 If $indent_char is specified and defined, the HTML to be output is
-intented, using the string you specify (which you probably should
+indented, using the string you specify (which you probably should
 set to "\t", or some number of spaces, if you specify it).
 
 If C<\%optional_end_tags> is specified and defined, it should be
@@ -3773,7 +3773,7 @@ sub same_as {
   $h = HTML::Element->new_from_lol($array_ref);
   @elements = HTML::Element->new_from_lol($array_ref, ...);
 
-Resursively constructs a tree of nodes, based on the (non-cyclic)
+Recursively constructs a tree of nodes, based on the (non-cyclic)
 data structure represented by each C<$array_ref>, where that is a reference
 to an array of arrays (of arrays (of arrays (etc.))).
 

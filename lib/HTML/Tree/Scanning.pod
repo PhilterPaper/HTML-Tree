@@ -248,7 +248,7 @@ you'll find out the flat list of tokens that HTML::Parser returns
 isn't immediately useful.  To get something useful out of those tokens,
 you'll need to write code that knows some things about what elements
 take no content (as with "hr" elements), and that a "</p>" end-tags
-are omissible, so a "<p>" will end any currently
+are omittible, so a "<p>" will end any currently
 open paragraph -- and you're well on your way to pointlessly
 reinventing much of the code in HTML::TreeBuilder
 
