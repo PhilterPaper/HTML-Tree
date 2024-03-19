@@ -2,10 +2,12 @@ Changelog for HTML-Tree
 
 {{$NEXT}}
 
-5.08     2024-02-22
+5.08     2024-03-19
 
     * Fix POD misspellings (ref: RT#123586, but may be more to find, as list
       of problems [spelling.patch] removed at some point)
+    * in TreeBuilder, change HTML::Tagset minimum from 3.02 to 3.24. Note that
+      Element.pm also uses Tagset, but any version
 
 5.07     2017-08-31
    Release by Kent Fredric

@@ -57,7 +57,7 @@ BEGIN {
 #---------------------------------------------------------------------------
 
 use HTML::Entities ();
-use HTML::Tagset 3.02 ();
+use HTML::Tagset 3.24 ();
 
 use HTML::Element ();
 use HTML::Parser 3.46 ();
