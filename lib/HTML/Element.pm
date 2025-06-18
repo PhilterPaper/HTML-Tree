@@ -1715,12 +1715,12 @@ a reference to that hash.
 =cut
 
 sub as_HTML {
-    my ( $self, $entities, $indent, $omissible_map ) = @_;
+    my ( $self, $entities, $indent, $omittable_map ) = @_;
 
     #my $indent_on = defined($indent) && length($indent);
     my @html = ();
 
-    $omissible_map ||= \%HTML::Element::optionalEndTag;
+    $omittable_map ||= \%HTML::Element::optionalEndTag;
     my $empty_element_map = $self->_empty_element_map;
 
     my $last_tag_tightenable    = 0;
@@ -1770,7 +1770,7 @@ sub as_HTML {
                     }
                     elsif (
                         not(   $empty_element_map->{$tag}
-                            or $omissible_map->{$tag} )
+                            or $omittable_map->{$tag} )
                         )
                     {
 
@@ -1876,7 +1876,7 @@ sub as_HTML {
                     }
                     elsif (
                         not(   $empty_element_map->{$tag}
-                            or $omissible_map->{$tag} )
+                            or $omittable_map->{$tag} )
                         )
                     {
 
